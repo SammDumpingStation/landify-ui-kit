@@ -1,6 +1,7 @@
 import React from "react";
 import PrimaryButton from "../shared/PrimaryButton";
 import Image from "next/image";
+import Github from "../shared/Github";
 
 const Footer = () => {
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
         alt="Footer Mockup"
       />
       <div className="absolute bottom-0 left-0 right-0 bg-foreground px-5 py-6 space-y-5">
-        <div className="flex gap-4">
+        <div className="flex items-center gap-4">
           <Image
             src={"/icons/instagram.svg"}
             width={32}
@@ -34,12 +35,9 @@ const Footer = () => {
             height={32}
             alt="Dribbler Icon"
           />{" "}
-          <Image
-            src={"/icons/github.svg"}
-            width={32}
-            height={32}
-            alt="Github Icon"
-          />{" "}
+          <div className="p-1 rounded-full bg-[#4E4D4D]">
+            <Github />
+          </div>
           <Image
             src={"/icons/twitter.svg"}
             width={32}

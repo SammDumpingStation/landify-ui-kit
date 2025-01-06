@@ -11,7 +11,7 @@ const Integrations = () => {
           We integrate with more than 50 apps you use daily
         </p>
       </div>
-      <div className="flex flex-col items-center">
+      <div className="w-full">
         <div className="logo-container">
           {companyLogos.logos.slice(0, 6).map((logo) => (
             <Image
