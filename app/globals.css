@@ -96,6 +96,6 @@ body {
     @apply py-[60px] px-[30px] text-center w-full relative;
   }
   .logo-container {
-    @apply flex py-8 space-x-4
+    @apply flex py-8 space-x-[15px] overflow-hidden
   }
 }

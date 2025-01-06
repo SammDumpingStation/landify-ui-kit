@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { ArrowRight, Rocket } from "lucide-react";
+import clsx from "clsx";
 
 type ButtonProps = {
   variant?:
@@ -15,6 +16,7 @@ type ButtonProps = {
   rocket?: boolean;
   arrow?: boolean;
   title: string;
+  otherStyles?: string;
 };
 
 const PrimaryButton = ({
@@ -22,14 +24,13 @@ const PrimaryButton = ({
   rocket = false,
   arrow = true,
   title,
+  otherStyles,
 }: ButtonProps) => {
   return (
-    <Button className="" variant={variant}>
+    <Button className={clsx("", otherStyles)} variant={variant}>
       {rocket && <Rocket width={20} height={20} />}
       {title}
-      {!rocket && arrow && (
-        <ArrowRight width={20} height={20} />
-      )}
+      {!rocket && arrow && <ArrowRight width={20} height={20} />}
     </Button>
   );
 };
