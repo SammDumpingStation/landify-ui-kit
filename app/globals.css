@@ -83,6 +83,9 @@ body {
   .h2 {
     @apply scroll-m-20 text-[38px] font-bold tracking-tight;
   }
+  .h3 {
+    @apply scroll-m-20 text-[38px] font-semibold tracking-tight;
+  }
   .p {
     @apply scroll-m-20 text-[21px] font-mulish;
   }
