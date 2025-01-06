@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 const Integrations = () => {
   return (
-    <section className="main-container">
+    <section className="main-container space-y-10">
       <div>
         <h1 className="h2">More than 50 Integrations</h1>
         <p className="lead">

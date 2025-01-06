@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Mulish } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
