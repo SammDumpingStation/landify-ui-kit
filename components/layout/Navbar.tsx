@@ -36,10 +36,15 @@ const Navbar = () => {
       {menuOpen && (
         <div className="px-10 flex flex-col text-lg py-5 gap-5">
           <Link href={"/"}>Landing Page V1</Link>
-          <Link href={"/"}>Landing Page V2</Link>
-          <Link href={"/"}>Landing Page V3</Link>
-          <Link href={"/"}>Landing Page V4</Link>
-          <PrimaryButton title="Contact Me" otherStyles="w-full" rocket />
+          <Link href={"/landing-v2"}>Landing Page V2</Link>
+          <Link href={"/landing-v3"}>Landing Page V3</Link>
+          <Link href={"/landing-v4"}>Landing Page V4</Link>
+          <PrimaryButton
+            title="Contact Me"
+            otherStyles="w-full gap-4"
+            github
+            arrow={false}
+          />
         </div>
       )}
     </nav>

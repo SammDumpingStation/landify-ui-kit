@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "../ui/button";
 import { ArrowRight, Rocket } from "lucide-react";
 import clsx from "clsx";
+import Image from "next/image";
+import Github from "./Github";
 
 type ButtonProps = {
   variant?:
@@ -15,6 +17,7 @@ type ButtonProps = {
     | undefined;
   rocket?: boolean;
   arrow?: boolean;
+  github?: boolean;
   title: string;
   otherStyles?: string;
 };
@@ -23,12 +26,14 @@ const PrimaryButton = ({
   variant = "default",
   rocket = false,
   arrow = true,
+  github = false,
   title,
   otherStyles,
 }: ButtonProps) => {
   return (
-    <Button className={clsx("", otherStyles)} variant={variant}>
+    <Button className={clsx("flex", otherStyles)} variant={variant}>
       {rocket && <Rocket width={20} height={20} />}
+      {github && <Github />}
       {title}
       {!rocket && arrow && <ArrowRight width={20} height={20} />}
     </Button>
