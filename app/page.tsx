@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 import Features from "./sections/Features";
 import SelectedWorks from "./sections/SelectedWorks";
 import Testimonials from "./sections/Testimonials";
+import Team from "./sections/Team";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Features />
       <SelectedWorks />
       <Testimonials />
+      <Team />
     </main>
   );
 }

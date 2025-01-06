@@ -4,7 +4,7 @@ import { Star } from "lucide-react";
 
 const TestimonialCard = () => {
   return (
-    <Card className="border-0 shadow-0 space-y-[30px] px-[30px] py-[40px]">
+    <Card className="bg-white border-0 shadow-0 space-y-[30px] px-[30px] py-[40px]">
       <div className="flex flex-col items-center justify-center">
         <Image
           src={"/images/profile-1.png"}
@@ -12,7 +12,7 @@ const TestimonialCard = () => {
           height={120}
           alt="Testimonial Profiles"
         />
-        <h1 className="text-[21px] font-semibold">David Licuaco</h1>
+        <h1 className="text-[21px] font-semibold mt-4">David Licuaco</h1>
         <p className="lead">Lead Developer @Selos Academy</p>
       </div>
       <div className="space-y-6">
