@@ -13,19 +13,21 @@ type ButtonProps = {
     | null
     | undefined;
   rocket?: boolean;
+  arrow?: boolean;
   title: string;
 };
 
 const PrimaryButton = ({
   variant = "default",
   rocket = false,
+  arrow = true,
   title,
 }: ButtonProps) => {
   return (
     <Button className="" variant={variant}>
       {rocket && <Rocket width={20} height={20} />}
       {title}
-      {!rocket && variant === "default" && (
+      {!rocket && arrow && (
         <ArrowRight width={20} height={20} />
       )}
     </Button>

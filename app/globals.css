@@ -95,4 +95,7 @@ body {
   .main-container {
     @apply py-[60px] px-[30px] text-center w-full;
   }
+  .logo-container {
+    @apply flex py-8 space-x-4
+  }
 }
