@@ -141,6 +141,7 @@ const fullLogos = [
 
 export const companyLogos = {
   logos,
+  fullLogos
 };
 
 export default companyLogos;
