@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="bg-secondary-s1 min-h-[10vh] !pt-[100px] !pb-0 main-container flex flex-col items-center gap-16 w-full">
+    <section className="main-container bg-secondary-s1 !pb-0 !pt-[135px]">
       <div className="space-y-10">
         <div className="space-y-5">
           <h1 className="h1">Create Engaging Landing Pages</h1>

@@ -31,7 +31,7 @@ const PrimaryButton = ({
   otherStyles,
 }: ButtonProps) => {
   return (
-    <Button className={clsx("flex", otherStyles)} variant={variant}>
+    <Button className={clsx("flex mx-auto", otherStyles)} variant={variant}>
       {rocket && <Rocket width={20} height={20} />}
       {github && <Github />}
       {title}

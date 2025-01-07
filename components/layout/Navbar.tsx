@@ -5,19 +5,31 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(true);
   return (
-    <nav className="fixed top-0 w-full py-5 bg-secondary-s1 z-50 border-b border-foreground">
+    <nav
+      className={clsx("fixed top-0 w-full py-5 z-50 border-b bg-background", {
+        "border-foreground bg-secondary-s1": pathname === "/",
+      })}
+    >
       <div className="flex justify-between px-5 md:px-8 lg:px-10 xl:px-[50px]">
         <Link href={"/"}>
-          <Image
-            src={"/logos/logo-mark.svg"}
-            width={32}
-            height={32}
-            alt="Logo"
-          />
+          {pathname === "/landing-v2" && (
+            <Image src={"/logos/logo.svg"} width={179} height={32} alt="Logo" />
+          )}
+          {pathname != "/landing-v2" && (
+            <Image
+              src={"/logos/logo-mark.svg"}
+              width={32}
+              height={32}
+              alt="Logo"
+            />
+          )}
         </Link>
         <PrimaryButton title="Get Started" otherStyles="max-lg:hidden" />
 

@@ -106,6 +106,39 @@ const logos = [
   },
 ];
 
+const fullLogos = [
+  {
+    id: 1,
+    companyName: "DropBox",
+    logo: "/full-company-logo/airbnb.png",
+  },
+  {
+    id: 2,
+    companyName: "DropBox",
+    logo: "/full-company-logo/amazon.png",
+  },
+  {
+    id: 3,
+    companyName: "DropBox",
+    logo: "/full-company-logo/fedex.png",
+  },
+  {
+    id: 4,
+    companyName: "DropBox",
+    logo: "/full-company-logo/google.png",
+  },
+  {
+    id: 5,
+    companyName: "DropBox",
+    logo: "/full-company-logo/hubspot.png",
+  },
+  {
+    id: 6,
+    companyName: "DropBox",
+    logo: "/full-company-logo/microsoft.png",
+  },
+];
+
 export const companyLogos = {
   logos,
 };

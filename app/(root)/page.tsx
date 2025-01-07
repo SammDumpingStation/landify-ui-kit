@@ -4,16 +4,18 @@ import SelectedWorks from "./sections/SelectedWorks";
 import Testimonials from "./sections/Testimonials";
 import Team from "./sections/Team";
 import Integrations from "./sections/Integrations";
+import Footer from "./sections/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-[100vh]">
       <Hero />
       <Features />
       <SelectedWorks />
       <Testimonials />
       <Team />
       <Integrations />
+      <Footer />
     </main>
   );
 }

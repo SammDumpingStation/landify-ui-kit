@@ -1,7 +1,12 @@
 import React from "react";
+import Hero from "./sections/Hero";
 
 const Home = () => {
-  return <div></div>;
+  return (
+    <main className="min-h-[100vh]">
+      <Hero />
+    </main>
+  );
 };
 
 export default Home;
